@@ -2,11 +2,11 @@ import librosa
 import numpy as np
 
 class Hparams:
-    mel_checkpoint = '/content/drive/My Drive/audio/melgan-audio' # Претренированная melgan модель
-    wav_checkpoint = "/content/drive/My Drive/audio/newvoice/audiofiles/21" # Претренированная wavgan модель
+    mel_checkpoint = './logs/mel_ckpt_51k.pt' # Претренированная melgan модель
+    wav_checkpoint = "./logs/wav_ckpt_27k.pt" # Претренированная wavgan модель
     
-    data_dir = './data' # Путь к звуковым файлам для тренировки
-    test_dir = './test' # Папка куда надо поместить файлы для тестирования    
+    data_dir = '/content/drive/My Drive/audio/melgan-audio' # Путь к звуковым файлам для тренировки
+    test_dir = '/content/drive/My Drive/audio/newvoice/audiofiles/21' # Папка куда надо поместить файлы для тестирования    
     train_dir = './train' # Папка где будут храниться mel и звуковые файлы после предобработки
     save_dir = './logs' # Папка куда сохраняются синтезированные файлы и логи во время обучения
     
